@@ -31,10 +31,13 @@ const manajemenInventaris = {
 
     },
     "cariBarang": (idBarang) => {
-        if(idBarang in inventarisGudangAwal){
-            for(i=0;i<inventarisGudangAwal.length;i++){
-                return inventarisGudangAwal[i].idBarang
-            }
+        
+        for(i=0;i<inventarisGudangAwal.length;i++){
+            if(idBarang in inventarisGudangAwal[i]){
+                return inventarisGudangAwal[i].id
+            }else{
+            return "tidak ditemukan"
+         }
         }
     },
     "totalNilaiInventaris": () => {
