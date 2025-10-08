@@ -17,8 +17,3 @@ create table absensi (
 INSERT INTO karyawan(nama, email) VALUES
 ('zoro', 'zoro@email.com'),
 ('sanji', 'sanji@email.com');
-
-insert into absensi(karyawan_id) values
-(1),
-(2),
-(3);
